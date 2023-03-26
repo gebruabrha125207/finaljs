@@ -3,7 +3,9 @@
 let grid = document.querySelector(".products");
 filterinput = document.getElementById("filterinput");
 
-fetch('./database/mydb.json')
+fetch('database/mydb.json')
+
+
             .then(res=>res.json())
             .then(json=>{
                 for (let value of json) {
@@ -14,7 +16,8 @@ fetch('./database/mydb.json')
 
             //add event listner
 
-filterinput.addeventlistner("keyup", filterProducts);
+filterinput.addEventListener("keyup", filterProducts);
+
        //callback function
 function filterProducts(){
   let filtervalue = filterinput.value.toUpperCase();

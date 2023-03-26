@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="container mx-auto">
+    <h1 class="font-poppins text-center text-3xl font-bold pt-24">My products</h1>
+
+</div>
+<form class="text-center py">
+    <input type="text"class="placeholder-gray-800 focus:outline-none big-gray-200 text-gray-800 w-2/4 py-2 px-3 font-poopins rounded-md/"id="filterinput"placeholder="filter">
+
+</form>
+
+<div class ="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20">
+    <div class="item justify-self-center">
+        <img src="./pic/images1.jpeg" class="big-covering img"alt="images1">
+        <div class ="text-centery py-3 font-poppins">
+             <h1 class=""text-lg-title>product title</h1>
+             <a href="#" class = "block"> <span class="text-sm text-red-400">catagory</span></a>
+             <span class="block py-3">$ <span class="text-md">5.3</span></span>
+             <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">buy now</button>
+        </div>
+    </div>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

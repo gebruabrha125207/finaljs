@@ -1,0 +1,23 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ 
+ 
+  .font-poppin¨{
+
+    font-family: 'Montserrat', sans-serif;
+  }
+  .img{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(224, 224,224);
+  }
+
+  .input {
+    margin-top: 0.5rem;
+    color: blueviolet;
+}
+
+  .input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: red; }

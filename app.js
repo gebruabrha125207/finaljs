@@ -15,7 +15,7 @@ fetch('database/mydb.json')
             });
 
             //add event listner
-filterinput.addEventListener("input", filterProducts);
+
 filterinput.addEventListener("keyup", filterProducts);
 
        //callback function

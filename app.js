@@ -25,7 +25,7 @@ function filterProducts() {
   for (let i = 0; i < items.length; i++) {
     let span = items[i].querySelector(".text-lg-title");
     if (span.innerHTML.toUpperCase().indexOf(filtervalue) > -1) {
-      items[i].style.display = "initial";
+      items[i].style.display ="block"; 
     } else {
       items[i].style.display = "none";
     }

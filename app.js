@@ -1,7 +1,7 @@
 
 
 let grid = document.querySelector(".products");
-let filterinput = document.getElementById("filterinput");
+let filterinput = document.getElementByid("filterinput");
 
 fetch('database/mydb.json')
 

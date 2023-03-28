@@ -19,23 +19,19 @@ fetch('database/mydb.json')
 filterinput.addEventListener("keyup", filterProducts);
 
        //callback function
-function filterProducts(){
+function filterProducts() {
   let filtervalue = filterinput.value.toUpperCase();
-  let item = grid.querySelector(".item")
-  for(let i =0; i <item.length; i++)
-  {
-    let span  =item[i].querySelector(".item");
-     if(span.innerHTML.toUpperCase().indexOf(filtervalue) > -1)
-     {
-      item[i].style.display = "initial";
-     }
-     else{
-      item[i].style.display = "none";
-     }
+  let items = grid.querySelectorAll(".item");
+  for (let i = 0; i < items.length; i++) {
+    let span = items[i].querySelector(".text-lg-title");
+    if (span.innerHTML.toUpperCase().indexOf(filtervalue) > -1) {
+      items[i].style.display = "initial";
+    } else {
+      items[i].style.display = "none";
+    }
   }
-  console.log(filtervalue);
-
 }
+
             function addelement(appendln, value){
                 let div = document.createElement("div");
                 div.className = "item justify-self-center";
